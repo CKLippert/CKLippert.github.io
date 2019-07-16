@@ -85,7 +85,7 @@ a{
 }
 
 .pimg-1{
-    background-image: url(../img/art-beads-blur-276218.jpg);
+    background-image: url(art-beads-blur-276218.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -304,17 +304,17 @@ a{
 
 /* IMAGES */
 .pimg-2{
-    background-image: url(../img/arachnid-close-up-cobweb-276347.jpg);
+    background-image: url(arachnid-close-up-cobweb-276347.jpg);
     min-height: 400px;
 }
 
 .pimg-3{
-    background-image: url(../img/arthropod-blur-celebration-1494585.jpg);
+    background-image: url(arthropod-blur-celebration-1494585.jpg);
     min-height: 400px;
 }
 
 .pimg-4{
-    background-image: url(../img/close-up-cobweb-dew-1477835.jpg);
+    background-image: url(close-up-cobweb-dew-1477835.jpg);
     min-height: 400px;
 }
 
