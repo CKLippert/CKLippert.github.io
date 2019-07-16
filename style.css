@@ -1,0 +1,388 @@
+/* Global Styles */
+
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+h2, p, span{
+    margin: 0;
+}
+
+li{
+    list-style-type: none;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* MAIN-NAVIGATION */
+#nav-1,
+#nav-2{
+    font-size: 1.2em;    
+    width: 30%;
+    display: flex;
+    flex: 1 auto;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pimg-1 #logo{
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#logo img{
+    width: 300px;
+    position: relative;
+}
+
+
+#nav-1 #nav-bar-1 li,
+#nav-2 #nav-bar-2 li{
+    display: inline-block;
+    margin: 0px 30px;
+    text-transform: uppercase;
+}
+
+.pimg-1 #nav-1 #nav-bar-1 .nav,
+.pimg-1 #nav-2 #nav-bar-2 .nav{
+    text-decoration: none;
+    color: rgb(189, 188, 188);
+    font-family: 'Nunito Sans', Arial;
+    font-weight: bold;
+}
+
+.pimg-1 #nav-1 #nav-bar-1 .nav:hover,
+.pimg-1 #nav-2 #nav-bar-2 .nav:hover{
+    color: #fff;
+    transition: all ease-in-out 0.25s;
+}
+
+.pimg-1 #nav-1 #nav-bar-1 .nav::after,
+.pimg-1 #nav-2 #nav-bar-2 .nav::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0%;
+    background-color: #fff;
+    position: absolute;
+    padding-top: 3px;
+    transition: all ease-in-out 250ms;
+}
+
+.pimg-1 #nav-1 #nav-bar-1 .nav:hover::after,
+.pimg-1 #nav-2 #nav-bar-2 .nav:hover::after{
+    width: 100%;
+}
+
+.pimg-1{
+    background-image: url(../img/art-beads-blur-276218.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100%;
+    display: flex;
+}
+
+/* SHOWCASE */
+#showcase{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 320px;
+    /* BACKGROUND: #000; */
+    position: absolute;
+}
+
+#showcase h1{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    color: #fff;
+    letter-spacing: 4px;
+    padding: 15px;
+    margin: 0;
+}
+
+#showcase p{
+    color: #fff;
+    font-size: 1.6em;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+
+#showcase .btn-lrg{
+    border: none;
+    outline: none;
+    margin: 60px;
+    padding: 15px 80px;
+    background: #fff;
+    font-family: 'Nunito Sans' arial;
+    font-size: 1.7em;
+    border-radius: 30px;
+}
+
+#showcase .btn-lrg:hover{
+    background: #26193e;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 80px;
+    margin: 60px;
+    font-weight: bold;
+    transition: all ease-in-out 300ms;
+}
+
+/* HOW SECTION */
+
+.thehow-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ddd;
+    width: 100%;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+.section-light{
+    margin: 0;
+    padding: 0;
+}
+
+.how-section{
+    display: flex;
+    width: 22%;
+    margin: 20px 25px 10px 25px;
+    text-align: center;
+    
+}
+
+.how-section-content h3{
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.how-section-content p{
+    font-size: 18px;
+    line-height: 1.6rem;
+    padding: 10px 0 5px 0;
+    margin-bottom: 20px;
+    
+}
+
+/* .how-section-content .how-section-links{
+    color: #282e34;
+}
+
+.how-section-content .how-section-list{
+    margin: 0;
+    padding: 5px 0px 10px 0px;
+}
+
+.how-section-content .how-section-list li{
+    padding: 5px;
+}
+
+.how-section-content .how-section-list i{
+    padding-right: 10px;
+    font-size: 25px;
+} */
+
+/* WHY SECTION */
+
+.thewhy-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #282e34;
+    color: #ddd;
+    width: 100%;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+.why-section{
+    display: flex;
+    width: 22%;
+    margin: 20px 25px 10px 25px;
+    text-align: center;
+    
+}
+
+.why-section-content h3{
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.why-section-content p{
+    font-size: 18px;
+    line-height: 1.6rem;
+    padding: 10px 0 5px 0;
+    margin-bottom: 20px;
+    
+    
+}
+
+/* WHAT SECTION */
+
+.thewhat-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #282e34;
+    background-color: #ddd;
+    width: 100%;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+.what-section{
+    display: flex;
+    width: 22%;
+    margin: 20px 25px 10px 25px;
+    text-align: center;
+    
+}
+
+.what-section-content h3{
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.what-section-content p{
+    font-size: 18px;
+    line-height: 1.6rem;
+    padding: 10px 0 5px 0;
+    margin-bottom: 20px;    
+}
+
+.section-light .header-1, .header-3{
+    font-size: 100px;
+    text-decoration: underline;
+    color: #000;
+}
+
+.heading-light, .heading-dark{
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.section-dark .header-2{
+    font-size: 100px;
+    text-decoration: underline;
+}
+
+.pimg-2, .pimg-3, .pimg-4{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* IMAGES */
+.pimg-2{
+    background-image: url(../img/arachnid-close-up-cobweb-276347.jpg);
+    min-height: 400px;
+}
+
+.pimg-3{
+    background-image: url(../img/arthropod-blur-celebration-1494585.jpg);
+    min-height: 400px;
+}
+
+.pimg-4{
+    background-image: url(../img/close-up-cobweb-dew-1477835.jpg);
+    min-height: 400px;
+}
+
+
+
+.section{
+    text-align: left;
+    padding: 15px 80px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    width: 70%;
+}
+
+.section-light{
+    background-color: #ddd;
+    color: #282e34;
+    background-size: cover;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+
+
+.btn-lrg-1{
+    position: absolute;
+    top: 50%;
+    border: none;
+    margin-left: 44.5%;
+    padding: 8px 40px;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: 'Nunito Sans', arial;
+    font-size: 1.5em;
+    border-radius: 30px; 
+}
+
+.btn-lrg-1:hover{
+    background: #000;
+    color: #fff;
+    transition: all ease-in-out 0.5s;
+}
+
+.portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100px;
+    background: #000;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+footer{
+    background-color: #282e34;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    height: 40px;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width:1080px){
+
+}
